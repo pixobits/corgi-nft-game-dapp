@@ -1,0 +1,251 @@
+{
+  "contractName": "CorgiToken",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Volumes/Data/Trading/NFT-corgitoken/src/contracts/CorgiToken.sol\":\"CorgiToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Volumes/Data/Trading/NFT-corgitoken/src/contracts/CorgiToken.sol\":{\"keccak256\":\"0x3e96d83d80004f39a2c32142ea4ad97bf3787d3275c8c4fed8c3a2aff3b7db38\",\"urls\":[\"bzz-raw://49afac4afd295c6d49c69c1b72f53130ac8f2ba58556cdfb1240c1c025ce3085\",\"dweb:/ipfs/QmWbsibvqEr3ZsfVt3752JeFbdqbpZ5Cp5Lejj24xA6WdN\"]},\"/Volumes/Data/Trading/NFT-corgitoken/src/contracts/ERC721Full.sol\":{\"keccak256\":\"0x2c9428b26856816aabc93836bad491818b513ebb65e79dd96b78f994bbce3c6f\",\"urls\":[\"bzz-raw://df88a09cdb67f443c89908d0b1ec154f6e5a4b0b2177580d9d2eae8d0e3d9cf1\",\"dweb:/ipfs/QmWaaSeg35RuBMD2vDnTggkjfTZbgFzupQoCWHgSpC3T8U\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280600b81526020017f436f72676920546f6b656e0000000000000000000000000000000000000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b610186806101166000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a723158200d887b14760011c8c36e9cdd025e0d7d0049ed2596fea7b1d04ec1b910e98ae364736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c806306fdde0314610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101495780601f1061011e57610100808354040283529160200191610149565b820191906000526020600020905b81548152906001019060200180831161012c57829003601f168201915b50505050508156fea265627a7a723158200d887b14760011c8c36e9cdd025e0d7d0049ed2596fea7b1d04ec1b910e98ae364736f6c63430005100032",
+  "sourceMap": "53:63:0:-;;;79:34;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;53:63;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:63:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "53:63:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:63:0;;;;;;;;;;;;;;;;;;;79:34;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;79:34:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.0;\n\nimport \"./ERC721Full.sol\";\n\ncontract CorgiToken {\n    string public name = \"Corgi Token\";\n}\n",
+  "sourcePath": "/Volumes/Data/Trading/NFT-corgitoken/src/contracts/CorgiToken.sol",
+  "ast": {
+    "absolutePath": "/Volumes/Data/Trading/NFT-corgitoken/src/contracts/CorgiToken.sol",
+    "exportedSymbols": {
+      "CorgiToken": [
+        6
+      ]
+    },
+    "id": 7,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "absolutePath": "/Volumes/Data/Trading/NFT-corgitoken/src/contracts/ERC721Full.sol",
+        "file": "./ERC721Full.sol",
+        "id": 2,
+        "nodeType": "ImportDirective",
+        "scope": 7,
+        "sourceUnit": 1462,
+        "src": "25:26:0",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6,
+        "linearizedBaseContracts": [
+          6
+        ],
+        "name": "CorgiToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 5,
+            "name": "name",
+            "nodeType": "VariableDeclaration",
+            "scope": 6,
+            "src": "79:34:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 3,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "79:6:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "436f72676920546f6b656e",
+              "id": 4,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "100:13:0",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_825ad60818c90d0d963a40afa51651957eeaa02702dff399bbdf6ec46e0c0cc9",
+                "typeString": "literal_string \"Corgi Token\""
+              },
+              "value": "Corgi Token"
+            },
+            "visibility": "public"
+          }
+        ],
+        "scope": 7,
+        "src": "53:63:0"
+      }
+    ],
+    "src": "0:117:0"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Volumes/Data/Trading/NFT-corgitoken/src/contracts/CorgiToken.sol",
+      "exportedSymbols": {
+        "CorgiToken": [
+          6
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".0"
+          ]
+        },
+        "id": 1,
+        "name": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 1462,
+          "absolutePath": "/Volumes/Data/Trading/NFT-corgitoken/src/contracts/ERC721Full.sol",
+          "file": "./ERC721Full.sol",
+          "scope": 7,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 2,
+        "name": "ImportDirective",
+        "src": "25:26:0"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            6
+          ],
+          "name": "CorgiToken",
+          "scope": 7
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "name",
+              "scope": 6,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "string",
+                  "type": "string"
+                },
+                "id": 3,
+                "name": "ElementaryTypeName",
+                "src": "79:6:0"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "436f72676920546f6b656e",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "string",
+                  "type": "literal_string \"Corgi Token\"",
+                  "value": "Corgi Token"
+                },
+                "id": 4,
+                "name": "Literal",
+                "src": "100:13:0"
+              }
+            ],
+            "id": 5,
+            "name": "VariableDeclaration",
+            "src": "79:34:0"
+          }
+        ],
+        "id": 6,
+        "name": "ContractDefinition",
+        "src": "53:63:0"
+      }
+    ],
+    "id": 7,
+    "name": "SourceUnit",
+    "src": "0:117:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xa8Bb0Dcf7D0429037f5e3DD7ed18f0744829acB1",
+      "transactionHash": "0x7fc5d3c43f7d79134fdb43e503b2deb88d97231b93bdb4eb7f3cea63f33a0789"
+    }
+  },
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-05-31T12:18:37.803Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
