@@ -32,7 +32,7 @@ contract("Corgi Token", (accounts) => {
     it("mint tokens", async () => {
       await token.mint(accounts[0], "https://www.token-uri.com/nft");
       result = await token.totalSupply();
-      assert.equal(result.toSring(), "1", "total supply is correct");
+      assert.equal(result.toString(), "1", "total supply is correct");
 
       result = await token.balanceOf(accounts[0]);
       assert.equal(result.toString(), "1", "balanceOf is correct");
