@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import corgi from "../../../assets/corgi.jpeg";
 class Navbar extends Component {
   render() {
     return (
@@ -12,7 +11,7 @@ class Navbar extends Component {
             rel="noopener noreferrer"
           >
             <img
-              src={corgi}
+              src="/images/corgi.jpeg"
               width="30"
               height="30"
               className="d-inline-block align-top"
