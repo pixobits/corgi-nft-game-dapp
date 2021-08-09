@@ -1,4 +1,4 @@
-import { Space } from 'antd';
+import { Button, Space } from 'antd';
 import { QuestionCircleOutlined } from '@ant-design/icons';
 import React from 'react';
 import { useModel, SelectLang } from 'umi';
@@ -21,8 +21,14 @@ const GlobalHeaderRight: React.FC = () => {
   if ((navTheme === 'dark' && layout === 'top') || layout === 'mix') {
     className = `${styles.right}  ${styles.dark}`;
   }
+  const connectWallet = () => {
+    console.log('connected');
+  };
   return (
     <Space className={className}>
+      <Button onClick={connectWallet} type="primary" size="small">
+        Connect Wallet
+      </Button>
       <HeaderSearch
         className={`${styles.action} ${styles.search}`}
         placeholder="站内搜索"
@@ -30,8 +36,8 @@ const GlobalHeaderRight: React.FC = () => {
         options={[
           { label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>, value: 'umi ui' },
           {
-            label: <a href="next.ant.design">Ant Design</a>,
-            value: 'Ant Design',
+            label: <a href="next.ant.design">Corgi Token</a>,
+            value: 'Corgi Token',
           },
           {
             label: <a href="https://protable.ant.design/">Pro Table</a>,

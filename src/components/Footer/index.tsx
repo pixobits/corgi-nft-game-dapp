@@ -16,8 +16,8 @@ export default () => {
       copyright={`${currentYear} ${defaultMessage}`}
       links={[
         {
-          key: 'Ant Design Pro',
-          title: 'Ant Design Pro',
+          key: 'Corgi Token Game',
+          title: 'Corgi Token Game',
           href: 'https://pro.ant.design',
           blankTarget: true,
         },
@@ -28,8 +28,8 @@ export default () => {
           blankTarget: true,
         },
         {
-          key: 'Ant Design',
-          title: 'Ant Design',
+          key: 'Corgi Token',
+          title: 'Corgi Token',
           href: 'https://ant.design',
           blankTarget: true,
         },
