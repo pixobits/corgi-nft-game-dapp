@@ -3,6 +3,7 @@ import { Doughnut } from 'react-chartjs-2';
 import Slider from "react-slick";
 import { TodoListComponent } from '../apps/TodoList'
 import { VectorMap } from "react-jvectormap"
+import TestBlockChain from './TestBlockchain';
 
 const mapData = {
   "BZ": 75.00,
@@ -15,14 +16,14 @@ const mapData = {
 
 export class Dashboard extends Component {
 
-  transactionHistoryData =  {
-    labels: ["Paypal", "Stripe","Cash"],
+  transactionHistoryData = {
+    labels: ["Paypal", "Stripe", "Cash"],
     datasets: [{
-        data: [55, 25, 20],
-        backgroundColor: [
-          "#111111","#00d25b","#ffab00"
-        ]
-      }
+      data: [55, 25, 20],
+      backgroundColor: [
+        "#111111", "#00d25b", "#ffab00"
+      ]
+    }
     ]
   };
 
@@ -33,9 +34,9 @@ export class Dashboard extends Component {
     cutoutPercentage: 70,
     elements: {
       arc: {
-          borderWidth: 0
+        borderWidth: 0
       }
-    },      
+    },
     legend: {
       display: false
     },
@@ -50,9 +51,10 @@ export class Dashboard extends Component {
     slidesToShow: 1,
     slidesToScroll: 1
   }
-  render () {
+  render() {
     return (
       <div>
+        <TestBlockChain />
         <div className="proBanner">
         </div>
         <div className="row">
@@ -168,7 +170,7 @@ export class Dashboard extends Component {
                     <h5 className="font-weight-normal text-whiite text-center mb-2 text-white">1200</h5>
                     <p className="text-small text-muted text-center mb-0">Total</p>
                   </div>
-                </div>  
+                </div>
                 <div className="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                   <div className="text-md-center text-xl-left">
                     <h6 className="mb-1">Transfer to Paypal</h6>
@@ -609,7 +611,7 @@ export class Dashboard extends Component {
                 </div>
                 <p className="text-muted">Well, it seems to be working now. </p>
                 <div className="progress progress-md portfolio-progress">
-                  <div className="progress-bar bg-success" role="progressbar" style={{width: '50%'}} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  <div className="progress-bar bg-success" role="progressbar" style={{ width: '50%' }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
@@ -688,31 +690,31 @@ export class Dashboard extends Component {
                   <div className="col-md-7">
                     <div id="audience-map" className="vector-map"></div>
                     <VectorMap
-                    map={"world_mill"}
-                    backgroundColor="transparent" //change it to ocean blue: #0077be
-                    panOnDrag={true}
-                    containerClassName="dashboard-vector-map"
-                    focusOn= { {
-                      x: 0.5,
-                      y: 0.5,
-                      scale: 1,
-                      animate: true
-                    }}
-                    series={{
-                      regions: [{
-                        scale: ['#3d3c3c', '#f2f2f2'],
-                        normalizeFunction: 'polynomial',
-                        values: mapData
-                      }]
-                    }}
-                  />
+                      map={"world_mill"}
+                      backgroundColor="transparent" //change it to ocean blue: #0077be
+                      panOnDrag={true}
+                      containerClassName="dashboard-vector-map"
+                      focusOn={{
+                        x: 0.5,
+                        y: 0.5,
+                        scale: 1,
+                        animate: true
+                      }}
+                      series={{
+                        regions: [{
+                          scale: ['#3d3c3c', '#f2f2f2'],
+                          normalizeFunction: 'polynomial',
+                          values: mapData
+                        }]
+                      }}
+                    />
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     );
   }
 }
